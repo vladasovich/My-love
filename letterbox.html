@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My love</title>
+    <link rel="stylesheet" type="text/css" href="letterbox.css" />
+</head>
+<body>
+    <div class="valentines-day-card">
+        <div class="card-front">
+            <div class="note">My Love</div>
+        </div>
+        
+        <div class="card-inside">
+            <div class="letter">
+                My Love, 
+                <br><br>
+                You’re everything I’ve ever wanted, and what we have feels truly special. I care about you more than words can say. My intention is pure, ang gusto ko ay maging masaya ka at iparamdam sayo na sobra kapa sa sobra, mahal na mahal kita sobra bi mahal kita higit pa sa inaakala mo, I know hindi ako perfect but trust me, I'll do my best to treat you right. And I just want to ask for your permission kung pwede ba ako manligaw? I want to cherish and care for you every single day because you mean everything to me. I love you endlessly.
+            </div>
+        </div>
+        
+        <!-- Separate open and close buttons under the card -->
+        <div class="button-container">
+            <button id="openButton" class="button">Open Card</button>
+            <button id="closeButton" class="button">Close Card</button>
+        </div>
+    </div>
+
+    <script>
+        const openButton = document.getElementById("openButton");
+        const closeButton = document.getElementById("closeButton");
+        const card = document.querySelector(".valentines-day-card");
+
+        openButton.addEventListener("click", function() {
+            card.classList.add("open");
+        });
+
+        closeButton.addEventListener("click", function() {
+            card.classList.remove("open");
+        });
+    </script>
+</body>
+</html>
